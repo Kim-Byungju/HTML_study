@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- 
+	1)절대경로
+		; http://로 시작되는 웹사이트의 주소를 사용해서 파일을 지정하는 방식
+		; http://localhost:8080/프로젝트명/패키지명/파일명.html
+			루트계층         제1계층        제2계층        제3계층
+			-----------------------------------
+			index.html
+			aaa  -------A.html
+					|
+					----A2.hml
+					|
+					bbb-----B.html
+						   |
+						   --ccc-----C.html
+			ddd----D.html	
+		
+			
+			
+	2)상대경로
+		; 현재파일로 부터 목적파일까지 상대적인 위치관계를 지정하는 방식  
+				
+				루트계층         제1계층        제2계층        제3계층
+			-----------------------------------
+			index.html
+			aaa  -------A.html (2.B로이동))
+					|
+					----A2.hml(1. A로이동)
+					|
+					bbb-----B.html (3.C로이동))
+						   |
+						   --ccc-----C.html(4.여기에서 D이동, B이동, A2이동)
+			ddd----D.html(여기에서 C로이동)	
+
+			-작성법 (나를 기준으로)
+			   .상위계층으로이동 :../
+			   .동일계층으로 이동:./
+			   .하위계층으로 이동:/
+
+
+
+
+
+ -->
+ <html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>절대경로로 파일을 호출합니다</h1>
+	<hr><br><br>
+
+	<ul>
+		<li><a href = "http://Localhost:8080/Ch02/path_절대경로/aaa/A.html">A파일</a></li>
+		<li><a href = "http://Localhost:8080/Ch02/path_절대경로/aaa/A2.html">A2파일</a></li>
+		<li><a href = "http://Localhost:8080/Ch02/path_절대경로/aaa/bbb/B.html">B파일</a></li>
+	</ul>
+
+</body>
+</html>
