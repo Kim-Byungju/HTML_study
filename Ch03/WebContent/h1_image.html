@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- 
+	이미지 링크 표현
+		.<img src = "절대경로/상대경로"  
+			  alt ="이미지 설명"
+			  width = "크기"   //%, 픽셀
+			  height = ""
+			  border = "이미지테두리 지정" >
+
+	이미지 종류
+		.gif : 그래픽, 256색상만 지원, 투명배경지원, 용락 작음, 애니메이션지원
+		.jpg : 트루컬러지원, 용량작음, 사진이미지에적합
+		.png : 트루컬러지원, 투명배경지원, 웹전용 이미지, 화면표시 속도가 빠르다. jpg에 비하여..
+	
+	이미지 고려사항
+		.이미지가 많아질수록 무거워진다. --- 그래픽화, 글자는 웹폰트지원 활용 등
+		.자바스크립트에서 ... 이미지를 먼저읽고 로딩하는 절차로 구현하는게 좋다.
+
+	이미지 활용 
+		.이미지
+		.이미지버튼
+	
+	이미지 적용
+		.body에 적용하면 ... 배경화면으로 지정된다.
+
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지 추가</title>
+</head>
+<body style = "background-image: url('./image/배경.jpg');">
+
+	<h1>내가 좋아하는 이미 가져오기</h1>
+	<img src = "./image/풍선1.png" alt = "풍선이여" width="100" height="100"><br>
+	<img src = "./image/풍선2.png" alt = "풍선이여" width="100" height="100"><br>
+	<img src = "./image/풍선3.png" alt = "풍선이여" width="100" height="100">
+	
+
+</body>
+</html>
