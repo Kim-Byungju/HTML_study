@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body align="center">
+	<fieldset style="width: 400px; "> 
+	<h1>상품주문서</h1>
+	<form>
+		<fieldset >
+			<legend>개인정보</legend>
+			<p >이&nbsp; 름 <input type="text" size="10"></p>
+			<p >연 락 처 <input type="text" name="phone1" size="3" maxlength="3">-
+					<input type="text" name="phone2" size="4" maxlength="4">-
+					<input type="text" name="phone2" size="4" maxlength="4">
+			</p>
+		</fieldset>
+		<fieldset >
+			<legend>배송정보</legend>
+			<p >주 소 <input type="text" size="10"></p>
+			<p >연 락 처 <input type="text" name="phone1" size="3" maxlength="3">-
+					<input type="text" name="phone2" size="4" maxlength="4">-
+					<input type="text" name="phone2" size="4" maxlength="4">
+			</p >
+			<p >메모
+			<textarea name="memo1" wrap="soft" placeholder="memo1"></textarea>
+			</p>
+		</fieldset>
+		<fieldset >
+			<legend>주문정보</legend>
+			<p >제품명 <input type="text" size="10"></p>
+			<p >수량 <input type="text" size="10"></p>
+			
+			<p >일반배송<input type="checkbox" name="send" value="namal">
+				특급배송<input type="checkbox" name="send" value="quick">
+			</p>
+		</fieldset>
+	</form>
+</fieldset>
+</body>
+</html>
