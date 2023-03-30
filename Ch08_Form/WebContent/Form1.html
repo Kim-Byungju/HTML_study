@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<!-- 
+	;웹폼 : 웹페이지를 통해서 사용자 입력을 받는 웹폼(또는 폼)이라 한다.
+
+	-form태그 속성
+		-action:입력받은 데이터를 어디로 보낼것이냐?
+			받은데이터를 처리할 서버응용 프로그램 경로
+
+		-method:폼데이터를 웹서버에 전송하는 방식
+		-target:웹서버 응용프로그램으로 부터 전송받은 데이터를
+				출력할 윈도우 이름
+		-enctype : 폼데이터를  웹서버로 전송할때 암호화 방식 지정
+	-폼의 종류(폼안ㄴ에서 )
+		.radiobox
+		.checkbox
+		.textarea
+		.input
+			-text : 한줄텍스트 입력창
+			 -passsword: 암호위력을 위한 한줄 텍스트 입력창
+			 -buttion : 버튼
+			 checkbox
+			 radioboc
+			 month[week|date time -local
+			number|range : 스핀버튼과 슬라이드로 바로편리한 숫자입력창
+		color 색입력쉽게
+		emil ruel/tel scarch 식검사능
+		file -로컬컴퓨터 파일을 선택하느는 폼요소
+			  ]
+
+
+ -->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="#" method="get" target="" enctype="">
+			사용자ID:<input type="text"value="" size="15"><br>
+			비밀번호&nbsp;:<input type="password" value="" size="15">
+
+			<input type=" submit " value="전송"><br>
+			<input type=" reset" value="취소">
+
+
+
+
+	</form>
+	<hr>
+	<form>
+		<form name="scarch_fo"
+			action="https://search.naver.com/search.naver/"
+			method="get"
+		>
+		검색단어: <input type="text" list="중국음식" name="query">
+			<datalist id="중국음식" name="query">
+				<option>짜장면</option>
+				<option>짬뽕</option>
+			</datalist>
+
+		
+			검색하기: <input type="submit" value="검색">
+
+		</form>
+	</form>
+
+</body>
+</html>
